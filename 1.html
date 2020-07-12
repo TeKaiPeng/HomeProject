@@ -26,9 +26,9 @@
             height: 50px;
             background-color: rgb(152, 206, 252);
             display: flex;
-            margin: auto;
+            /* margin: auto; */
             opacity: 0.8;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             position: fixed;
         }
@@ -40,14 +40,12 @@
             font-style: 35px;
             transition: background-color: black;;
             border-radius: 10px;
-
-
         }
         .nav a:hover{
-            background-color: red;
+            background-color: rgb(106, 106, 249);
             opacity: 0.9;
-            border: 10px solid #cccccc;
-
+            border: 5px solid #cccccc;
+            transition: background-color 0.4s;
 
         }
         .nav button {
@@ -57,18 +55,29 @@
             font-family: Arial;
             transition: background-color: black;;
         }
-        .search{
-            width: 400px;
-            /* height: 50px; */
-            display: flex;
-            justify-content: center;
+        .search input{
+            width: 300px;
+            height: 30px;
+            /* display: flex; */
+            /* justify-content: center; */
+            
         }
         /* .search input{
             width: 100px;
         } */
-        .box{
-            padding: 60px 0 0 0;
 
+        .box1{
+            padding: 60px 0 0 0;
+            margin: auto;
+            display: flex;
+        }
+        .box3{
+            width: 400px;
+            height: 400px;
+            background-color:  pink;
+        }
+
+        .box{
             margin: auto;
             display: flex;
             /* background-color: gray; */
@@ -90,14 +99,16 @@
             border: 3px solid #cccccc;
 
         }
-        .box .book img{
+        .box .book img {
             width: 200px;
             height: 300px;
         }
-        .box .book img:hover{
+        .box .book img:hover {
             background-color: black;
             opacity: 0.6;
             border: 3px solid #cccccc;
+            transition: background-color 0.9s;
+
         }
     </style>
     
@@ -115,11 +126,11 @@
     </div>
 
     <div class="nav">
+        
         <div class="logo">
             <a href="#">
                 <img src="https://picsum.photos/300/50/?random=1">
             </a>
-            
         </div>
 
         <div class="search">
@@ -128,12 +139,11 @@
             <button>搜尋</button>
         </div>
 
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-
+        <a href="#">新品</a>
+        <a href="#">暢銷</a>
+        <a href="#">人氣</a>
+        <a href="#">趨勢</a>
+        <a href="#">升級</a>
 
         <div class="button">
             <button>登入</button>
@@ -142,6 +152,21 @@
     </div>
 
     <!-- 我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線 -->
+    <div class="box1">
+        <div class="box3">1</div>
+        <div class="box3">2</div>
+        <div class="box3">3</div>
+        <div class="box3">4</div>
+    </div>
+    <div class="box1">
+        <div class="box3">5</div>
+        <div class="box3">6</div>
+        <div class="box3">7</div>
+        <div class="box3">8</div>
+    </div>
+
+
+
 
     <div class="box">
         <title>This is Title</title>
@@ -205,6 +230,12 @@
     </div>
 <!-- 我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線 -->
 
+    <div class="banner">
+        <img src="/Users/kiss-emily/desktop/tlweb/A03.jpg" alt="">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione, facere quia culpa ullam id maxime impedit porro qui eos.</p> -->
+    </div>
+<!-- 我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線我是分隔線 -->
+
     <div class="box">
         <div class="book">
             <img src="/Users/kiss-emily/desktop/tlweb/A02.jpg" alt="">
@@ -259,6 +290,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, magni.</p>
         </div>
     </div>
-    
+
+
 </body>
 </html>
